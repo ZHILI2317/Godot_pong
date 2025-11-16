@@ -1,6 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://ddhgoxw3qii8f"]
+[gd_scene load_steps=5 format=3 uid="uid://ddhgoxw3qii8f"]
 
 [ext_resource type="Script" uid="uid://8ryqxyb5w6q8" path="res://pong_game.gd" id="1_gb030"]
+[ext_resource type="FontFile" uid="uid://dprnpi37w6iyc" path="res://7SDD-1.ttf" id="2_ajsfb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ajsfb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kkmoc"]
 
 [node name="pong_game" type="Node2D"]
 script = ExtResource("1_gb030")
@@ -39,7 +44,28 @@ offset_bottom = 310.0
 
 [node name="HUD" type="CanvasLayer" parent="."]
 
-[node name="ScoreLabel" type="Label" parent="HUD"]
-offset_right = 40.0
-offset_bottom = 23.0
+[node name="PlayerScoreLabel" type="Label" parent="HUD"]
+offset_left = 150.0
+offset_top = 50.0
+offset_right = 190.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_ajsfb")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ajsfb")
 text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CPUScoreLabel" type="Label" parent="HUD"]
+offset_left = 650.0
+offset_top = 50.0
+offset_right = 690.0
+offset_bottom = 73.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_ajsfb")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxEmpty_kkmoc")
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
