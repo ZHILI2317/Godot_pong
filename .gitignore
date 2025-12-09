@@ -1,3 +1,24 @@
-# Godot 4+ specific ignores
-.godot/
-/android/
+# Godot4 ignore
+.godot/           
+*.translation     
+.import/
+
+
+export_presets.cfg
+
+bin/
+obj/
+
+.mono/
+
+
+.vscode/
+.idea/
+*.sln
+*.csproj.user
+
+.DS_Store
+Thumbs.db
+
+
+logs/
