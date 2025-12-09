@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://8ryqxyb5w6q8" path="res://pong_game.gd" id="1_gb030"]
 [ext_resource type="FontFile" uid="uid://dprnpi37w6iyc" path="res://7SDD-1.ttf" id="2_ajsfb"]
-[ext_resource type="AudioStream" uid="uid://dlkc2n13oxssj" path="res://pong.wav" id="3_kkmoc"]
+[ext_resource type="AudioStream" uid="uid://caycfmtoyx60u" path="res://Gothic Storm - Assassin Smash.mp3" id="3_kkmoc"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ajsfb"]
 
