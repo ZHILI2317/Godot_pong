@@ -6,7 +6,7 @@ extends Node2D
 
 # 移动速度
 var ball_speed = 400  # 球的移动速度（像素/秒）
-var paddle_speed = 800  # 球拍的移动速度（像素/秒）
+var paddle_speed = 400  # 球拍的移动速度（像素/秒）
 
 # 球的状态
 var ball_direction = Vector2(1, 1)  # 球的当前移动方向
@@ -227,10 +227,10 @@ func move_ai_paddle(delta):
 		
 		# 根据球的位置调整AI球拍位置
 		# 使用10像素的容差范围，避免过度抖动
-		if ball_center < paddle_center - 10:
+		if ball_center < paddle_center - 50:
 			# 球在上方，向上移动球拍
 			$RightPaddle.position.y -= paddle_speed * delta
-		elif ball_center > paddle_center + 10:
+		elif ball_center > paddle_center + 50:
 			# 球在下方，向下移动球拍
 			$RightPaddle.position.y += paddle_speed * delta
 		
